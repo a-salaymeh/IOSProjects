@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wzq-vA-es2">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="huyn5930_a4" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qRn-N8-tpg">
+                                <rect key="frame" x="107" y="556" width="20" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="hand.thumbsdown.fill" catalog="system"/>
+                                <connections>
+                                    <action selector="dislikeButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WaC-A2-aF7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WSw-Yx-cX4">
+                                <rect key="frame" x="287" y="556" width="20" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="hand.thumbsup.fill" catalog="system"/>
+                                <connections>
+                                    <action selector="likedButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PP7-4r-nqk"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5uo-ze-XKK">
+                                <rect key="frame" x="91" y="579" width="50" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oGZ-P2-YM8">
+                                <rect key="frame" x="20" y="527" width="374" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="kiwi.jpeg" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TrB-AU-cJR">
+                                <rect key="frame" x="107" y="329" width="200" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="30i-Wy-n6J">
+                                <rect key="frame" x="191" y="579" width="32" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="nextButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="S5k-Sl-LNu"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="03s-iq-u9h">
+                                <rect key="frame" x="272" y="579" width="50" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="favorites" id="9Pm-Uh-VAQ"/>
+                    <navigationItem key="navigationItem" id="ols-JG-dtI"/>
+                    <connections>
+                        <outlet property="DislikeCount" destination="5uo-ze-XKK" id="UAq-ZT-n7W"/>
+                        <outlet property="FruitImage" destination="TrB-AU-cJR" id="SvL-Vs-gPi"/>
+                        <outlet property="FruitName" destination="oGZ-P2-YM8" id="khv-hD-41R"/>
+                        <outlet property="LikeCount" destination="03s-iq-u9h" id="uFO-D5-cmm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1186.9565217391305" y="681.69642857142856"/>
+        </scene>
+        <!--Add View Controller-->
+        <scene sceneID="fHv-ln-IYF">
+            <objects>
+                <viewController id="fok-2c-Dmm" customClass="AddViewController" customModule="huyn5930_a4" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0tV-K3-DDs">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C4R-xz-oRq">
+                                <rect key="frame" x="107" y="249" width="200" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="fruitImageClicked:" destination="fok-2c-Dmm" eventType="touchUpInside" id="qoG-OS-kZt"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="questionmark" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="lGb-hp-Ajb">
+                                <rect key="frame" x="107" y="249.33333333333337" width="200" height="197.66666666666663"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" button="YES" image="YES"/>
+                                </accessibility>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="nAe-u5-GQJ"/>
+                                    <constraint firstAttribute="height" constant="200" id="rGc-Th-6an"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fruit Name " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6oD-9N-BGD">
+                                <rect key="frame" x="20" y="464" width="89" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sEQ-xJ-EGh">
+                                <rect key="frame" x="138" y="457" width="256" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="ReturnPressed:" destination="fok-2c-Dmm" eventType="primaryActionTriggered" id="GVp-1j-mgC"/>
+                                </connections>
+                            </textField>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dbn-7T-WUp">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem id="zbB-Vn-FAC">
+                                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="HfG-9K-Fsv">
+                                            <connections>
+                                                <action selector="cancelPressed:" destination="fok-2c-Dmm" id="caG-gd-r0m"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Save" id="K14-cJ-OES">
+                                            <connections>
+                                                <segue destination="KOq-cE-xVM" kind="unwind" unwindAction="unwindToTableView:" id="q2M-Rb-KJz"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="lGb-hp-Ajb" firstAttribute="centerX" secondItem="0tV-K3-DDs" secondAttribute="centerX" id="iKn-Fe-h29"/>
+                            <constraint firstItem="lGb-hp-Ajb" firstAttribute="centerX" secondItem="0tV-K3-DDs" secondAttribute="centerX" id="s8x-Dv-Hq8"/>
+                            <constraint firstItem="lGb-hp-Ajb" firstAttribute="centerY" secondItem="0tV-K3-DDs" secondAttribute="centerY" constant="-100" id="tan-WA-9xD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="C21-0y-hT8"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="2rb-07-0sa" appends="YES" id="7SK-7l-HZo"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" id="KzN-7J-igu"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="fruitImage" destination="lGb-hp-Ajb" id="KD3-oe-irm"/>
+                        <outlet property="fruitNameField" destination="sEQ-xJ-EGh" id="7dw-o2-Vxw"/>
+                        <outlet property="saveButton" destination="K14-cJ-OES" id="H7Q-cb-WMv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ytd-vs-Rj7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="KOq-cE-xVM" userLabel="Exit" sceneMemberID="exit"/>
+                <tapGestureRecognizer id="2rb-07-0sa">
+                    <connections>
+                        <action selector="ScreenTapped:" destination="fok-2c-Dmm" id="sD3-as-vw5"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="287" y="1393"/>
+        </scene>
+        <!--Delete-->
+        <scene sceneID="ILS-0g-4sj">
+            <objects>
+                <viewController id="LBn-Og-8vz" customClass="DeleteViewController" customModule="huyn5930_a4" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vpe-5x-pX2">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UF9-yK-Xgr">
+                                <rect key="frame" x="107" y="248" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="FoW-tc-jvC"/>
+                                    <constraint firstAttribute="width" constant="200" id="Zry-iq-4Y2"/>
+                                    <constraint firstAttribute="width" secondItem="UF9-yK-Xgr" secondAttribute="height" multiplier="1:1" id="oUj-2D-EY5"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fxI-Wm-Nh9">
+                                <rect key="frame" x="185" y="525" width="45" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Delete"/>
+                                <connections>
+                                    <action selector="DeleteButtonPressed:" destination="LBn-Og-8vz" eventType="touchUpInside" id="8mw-nQ-XLb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hvt-aC-yYB">
+                                <rect key="frame" x="191" y="606" width="32" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="NextButtonPressed:" destination="LBn-Og-8vz" eventType="touchUpInside" id="eD3-v5-FFg"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="77n-aw-6zZ">
+                                <rect key="frame" x="20" y="456" width="374" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="UF9-yK-Xgr" firstAttribute="centerX" secondItem="vpe-5x-pX2" secondAttribute="centerX" id="aR9-6C-8OY"/>
+                            <constraint firstItem="UF9-yK-Xgr" firstAttribute="centerY" secondItem="vpe-5x-pX2" secondAttribute="centerY" constant="-100" id="oJy-72-CJP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="nq8-q3-OTp"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Delete" image="minus-30-30" selectedImage="minus-30-30" id="iRy-wL-LP4"/>
+                    <connections>
+                        <outlet property="fruitImage" destination="UF9-yK-Xgr" id="7Cs-Vm-dx2"/>
+                        <outlet property="fruitName" destination="77n-aw-6zZ" id="ddn-bU-o1i"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wgl-vz-Cle" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="677" y="-504"/>
+        </scene>
+        <!--My Fruits-->
+        <scene sceneID="ZId-aQ-N1N">
+            <objects>
+                <viewController id="0eF-iv-4wj" customClass="TableViewController" customModule="huyn5930_a4" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OEd-SR-94h">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="GZS-sV-7wf">
+                                <rect key="frame" x="20" y="56" width="374" height="752"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="reuseIdentifier" id="fM7-ez-sFj" customClass="CustomCell" customModule="huyn5930_a4" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="374" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fM7-ez-sFj" id="Vn8-XL-giU">
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="79z-gC-iz5">
+                                                    <rect key="frame" x="93" y="12" width="116" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="h6N-aD-Avt">
+                                                    <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="fruitImage" destination="h6N-aD-Avt" id="9nQ-SP-UBe"/>
+                                            <outlet property="fruitName" destination="79z-gC-iz5" id="Zor-DT-3nZ"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="0eF-iv-4wj" id="rdQ-au-m3i"/>
+                                    <outlet property="delegate" destination="0eF-iv-4wj" id="lX4-sP-xCJ"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="bgP-8y-hpF"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="My Fruits" id="uiM-UI-7GH">
+                        <barButtonItem key="rightBarButtonItem" image="plus" catalog="system" id="Z6F-Ve-i1g">
+                            <connections>
+                                <segue destination="fok-2c-Dmm" kind="showDetail" id="fZZ-dC-LaD"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="GZS-sV-7wf" id="cIc-Ou-1dw"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="FavouriteFruitSegue" id="9VU-z5-hFj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uaC-qt-a7q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="286.95652173913044" y="681.69642857142856"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="d5b-GP-U7D">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wzq-vA-es2" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="w6S-Nz-Hum"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="vsa-qZ-9rZ">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="0eF-iv-4wj" kind="relationship" relationship="rootViewController" id="FQk-Dn-zZb"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DgE-Zb-hTy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-754" y="682"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="hand.thumbsdown.fill" catalog="system" width="64" height="62"/>
+        <image name="hand.thumbsup.fill" catalog="system" width="64" height="62"/>
+        <image name="kiwi.jpeg" width="225" height="225"/>
+        <image name="minus-30-30" width="30" height="30"/>
+        <image name="plus" catalog="system" width="64" height="56"/>
+        <image name="questionmark" catalog="system" width="48" height="64"/>
+    </resources>
+</document>
